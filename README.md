@@ -1,4 +1,4 @@
-B![crowdflow-logo](crowdflowLogo.png)
+![crowdflow-logo](crowdflowLogo.png)
 
 # Visualization of pedestrian trajectories from the crowdflow experiment at Eindhoven University of Technology
 
