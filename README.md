@@ -1,9 +1,9 @@
 ![crowdflow-logo](crowdflowLogo.png)
 
 # MF_landing_data_analysis
-This repository contains primers and examples to analyze the pedestrian tracking dataset collected at Eindhoven University of Technology (cf. Phys.Rev.E paper  https://doi.org/10.1103/PhysRevE.95.032316 ). 
+This repository contains primers and examples to analyze the pedestrian tracking dataset collected at Eindhoven University of Technology (see Physical Review E paper Fluctuations around mean walking behaviors in diluted pedestrian flows, A.Corbetta, C.Lee, R. Benzi, A.Muntean, F.Toschi,  https://doi.org/10.1103/PhysRevE.95.032316 ). 
 
-The dataset has `DOI`: `10.4121/uuid:25289586-4fda-4931-8904-d63efe4aa0b8`  and will soon be downloadable from the `4TU.ResearchData` server.
+The dataset considered afterwards has `DOI`: `10.4121/uuid:25289586-4fda-4931-8904-d63efe4aa0b8`  and will soon be downloadable from the `4TU.ResearchData` server.
 
 
 
@@ -15,10 +15,13 @@ This [jupyter notebook](Plot-trajectories.ipynb) shows how to use python pandas 
 ## Examples:
 
 Trajectories visualization 
+
 ![](trajectories_ex.png)
 
 Position depth map
+
 ![](depth_maps_ex.png)
 
 Walking speed pdf conditioned to the walking direction
+
 ![](walking_speed_pdf.png)
