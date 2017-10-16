@@ -16,6 +16,12 @@ The dataset contains 20.000 pedestrian trajectories recorded on a nearly 24/7 sc
 
 This [jupyter notebook](Plot-trajectories.ipynb) shows how to use [python pandas](http://pandas.pydata.org/) and the functions in the file [`MF_domain_related.py`](MF_domain_related.py) to visualize the trajectories. 
 
+
+### Requirements:
++ python 2.7
++ default scipy-stack (usage of the default anaconda package is advised)
+
+
 ## If you use the dataset please cite
 **this publication**
 ```
