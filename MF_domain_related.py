@@ -473,6 +473,8 @@ class Domain_plotter_cm():
                  , annotate_direction_size = None
                  , annotate_direction_append_note = ''
                  , annotate_direction_prepend_note = ''
+                 , xlabel_kw = {}
+                 , ylabel_kw = {}
                  , **kw):
         self.stairs = True
         self.true_mirroring = True
@@ -484,6 +486,8 @@ class Domain_plotter_cm():
         self.annotate_direction_size = annotate_direction_size
         self.annotate_direction_append_note = annotate_direction_append_note
         self.annotate_direction_prepend_note = annotate_direction_prepend_note
+        self.xlabel_kw = xlabel_kw
+        self.ylabel_kw = ylabel_kw
         self.kw = kw
 
     def __enter__(self):
@@ -512,7 +516,9 @@ class Domain_plotter_cm():
                               , just_domain = self.just_domain
                               , sharp_boundary = self.sharp_boundary
                               , xticks = self.xticks
-                              , yticks = self.yticks)
+                              , yticks = self.yticks
+                              , xlabel_kw = self.xlabel_kw
+                              , ylabel_kw = self.ylabel_kw)
 
 
 def plot_selected_trajs(df,pid_list):
