@@ -215,7 +215,7 @@ def draw_domain_std_close(true_mirroring = False
         if just_domain:
             print "WARNING: just_domain = True in combination with true_mirroring = False has to be implemented"
 
-        
+                   
 
         if xticks is None:
             #plt.xticks([-3.,-2.,-1,0.,1.,2.])
@@ -475,6 +475,8 @@ class Domain_plotter_cm():
                  , annotate_direction_prepend_note = ''
                  , xlabel_kw = {}
                  , ylabel_kw = {}
+                 , xlabel = '$x\,$[m]' 
+                 , ylabel = '$y\,$[m]'
                  , **kw):
         self.stairs = True
         self.true_mirroring = True
@@ -488,6 +490,8 @@ class Domain_plotter_cm():
         self.annotate_direction_prepend_note = annotate_direction_prepend_note
         self.xlabel_kw = xlabel_kw
         self.ylabel_kw = ylabel_kw
+        self.xlabel = xlabel
+        self.ylabel = ylabel
         self.kw = kw
 
     def __enter__(self):
@@ -518,7 +522,9 @@ class Domain_plotter_cm():
                               , xticks = self.xticks
                               , yticks = self.yticks
                               , xlabel_kw = self.xlabel_kw
-                              , ylabel_kw = self.ylabel_kw)
+                              , ylabel_kw = self.ylabel_kw
+                              , xlabel = self.xlabel
+                              , ylabel = self.ylabel)
 
 
 def plot_selected_trajs(df,pid_list):
